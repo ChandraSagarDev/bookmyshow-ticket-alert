@@ -2,8 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
 
-Get instant **SMS notifications** when movie tickets go live on  
-[BookMyShow](https://bookmyshow.com)!  
+Get instant **SMS notifications** when movie tickets go live on  [BookMyShow](https://bookmyshow.com)!  
 This bot automatically monitors your selected **movie, date, and
 theatres** and sends you an alert via **Twilio SMS** as soon as bookings
 open.
@@ -128,7 +127,7 @@ Edit the `config.json` file with your preferences:
 
 ---
 
-## ▶️ Usage
+## ✨ Usage
 
 Run once:
 
@@ -142,10 +141,26 @@ Run continuously every 5 minutes (built-in loop):
 python check_tickets.py --loop 5
 ```
 
-Or schedule with:  
-- **Windows Task Scheduler** → run every X minutes  
-- **Linux/macOS cron** → `*/5 * * * * python /path/to/check_tickets.py`  
+## ⌛ Scheduling Options
 
+### Windows Task Scheduler
+1. Open Task Scheduler → Create Task
+2. In Triggers, set "Repeat task every X minutes"
+3. In Actions, configure:
+   - Program/script: `python`
+   - Add arguments: `C:\path\to\check_tickets.py`
+4. Save and enable the task
+
+### Linux/macOS cron
+Add to crontab:
+```bash
+crontab -e
+```
+
+Add this line to run every 5 minutes:
+```bash
+*/5 * * * * /usr/bin/python3 /path/to/check_tickets.py
+```
 ---
 
 ## 📱 Example SMS Alert
