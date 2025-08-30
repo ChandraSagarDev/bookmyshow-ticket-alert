@@ -24,8 +24,7 @@ open.
 ## 📋 Prerequisites
 
 - Python **3.7+**  
-- [Twilio Account](https://www.twilio.com/) (for SMS notifications)  
-  👉 [Twilio Setup Guide](https://www.twilio.com/docs/sms/quickstart/python)  
+- [Twilio Account](https://www.twilio.com/) (for SMS notifications) → [Twilio Setup Guide](https://www.twilio.com/docs/sms/quickstart/python)
 - BookMyShow account (for reference)  
 
 ---
